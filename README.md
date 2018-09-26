@@ -1,6 +1,7 @@
 # BIOM9541MA
 Scripts to calculate the Anthropometric, Kinematic and Kinetic parameters of the MA
 Steps to run this:
+NOTE: As of 26/09/2018, the script is not yet final and may conatin various bugs that have yet to be fixed.
 
 1) Place the script in the csv directory;eg (place rania.py in data/csv/rania/, place sam.py in data/csv/sam/) 
 2) Access a Command line tool on your device (eg. Git bash, CMD) and direct to the directory of the script you wish to run.
