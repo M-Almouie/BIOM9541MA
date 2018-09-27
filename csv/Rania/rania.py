@@ -23,6 +23,9 @@ sFinish = 0
 eStart = 0
 eFinish = 0
 
+#participant's weight
+weight = 54.1
+
 def openCSV():
 	csvfile = open(filename, 'rt')
 	readCSV = csv.reader(csvfile, delimiter=',', quotechar='|')
@@ -345,24 +348,24 @@ print("\nCalculating Kinetics data for",filename,"\n")
 print("---------------------------------------------------")
 print("Ankle")
 print("-------")
-print("Max. dorsiflexor moment (N.m/kg):",maxDorsiMoment)
-print("Max. plantarflexor moment (N.m/kg)",maxPlantMoment)
-print("Max. power generation (W/kg)",maxAnkPowerGen)
-print("Max. power absorption in loading response (W/kg)",maxAnkPowerAbs)
+print("Max. dorsiflexor moment (N.m/kg):",maxDorsiMoment/weight)
+print("Max. plantarflexor moment (N.m/kg)",maxPlantMoment/weight)
+print("Max. power generation (W/kg)",maxAnkPowerGen/weight)
+print("Max. power absorption in loading response (W/kg)",maxAnkPowerAbs/weight)
 print("-------")
 print("Knee")
 print("-------")
-print("Max. extensor moment (N.m/kg):",maxKneeExtMoment)
-print("Max. flexor moment in stance (N.m/kg):",maxKneeFlexMoment)
-print("Max. power generation (W/kg):",maxKneePowerGen)
-print("Max. power absorption in loading response (W/kg):",maxKneePowerAbs)
+print("Max. extensor moment (N.m/kg):",maxKneeExtMoment/weight)
+print("Max. flexor moment in stance (N.m/kg):",maxKneeFlexMoment/weight)
+print("Max. power generation (W/kg):",maxKneePowerGen/weight)
+print("Max. power absorption in loading response (W/kg):",maxKneePowerAbs/weight)
 print("-------")
 print("Hip")
 print("-------")
-print("Max. extensor moment in stance(N.m/kg):",maxHipExtMoment)
-print("Max. flexor moment in stance (N.m/kg):",maxHipFlexMoment)
-print("Max. power generation in Loading Response(W/kg):",maxHipPowerGen)
-print("Max. power absorption in Swing(W/kg):",maxHipPowerGen2)
+print("Max. extensor moment in stance(N.m/kg):",maxHipExtMoment/weight)
+print("Max. flexor moment in stance (N.m/kg):",maxHipFlexMoment/weight)
+print("Max. power generation in Loading Response(W/kg):",maxHipPowerGen/weight)
+print("Max. power absorption in Swing(W/kg):",maxHipPowerGen2/weight)
 #for i in list:
 #	print(i)
 #print("Results for "+type+":")
